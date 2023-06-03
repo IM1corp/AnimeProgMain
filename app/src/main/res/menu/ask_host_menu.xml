@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/animego_menu_item"
+        android:visible="true"
+        android:title="AnimeGO"
+        android:icon="@mipmap/animego_icon"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/yummyanime_menu_item"
+        android:visible="true"
+        android:title="YummyAnime"
+        android:icon="@drawable/ic_yummy_fav"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/animejoy_menu_item"
+        android:visible="true"
+        android:title="YummyAnime"
+        android:icon="@mipmap/animejoy_icon"
+        tools:ignore="HardcodedText" />
+
+</menu>

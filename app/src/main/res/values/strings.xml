@@ -1,0 +1,245 @@
+<resources>
+    <string name="app_name">Yani.TV</string>
+    <string name="video_player_hint">От выбора видеоплеера зависит качество и/или скорость соединения.
+        Если вы видите, что видео виснит - попробуйте сменить плеер</string>
+    <string name="video_player">Плеер</string>
+    <string name="video_player_not_enabled">Плеер недоступен</string>
+    <string name="undefined_error">Неизвестная ошибка</string>
+    <string name="voice_authors">Озвучили </string>
+    <string name="actions">Действия</string>
+    <string name="voice_studio">Озвучка</string>
+    <string name="no_voice_authors">Не удалось определить состав людей, озвучивших данное аниме </string>
+    <string name="video_deleted_error">К сожалению, видео удалено. Выполнить поиск на других сайтах?</string>
+    <string name="video_not_enabled_error">К сожалению, <i>видео</i> недоступно в Вашей стране.\nЧтобы обойти данное ограничение, достаточно скачать <b>VPN</b>.
+        Перейдите по кнопке и скачайте понравившийся ( или включите уже имеющийся )
+    </string>
+    <string name="retry">Попробовать еще раз</string>
+    <string name="video_deleted_action_button">Поиск!</string>
+    <string name="go_link">Перейти</string>
+    <string name="episodes">эп.</string>
+    <string name="episodes_count">Эпизоды:</string>
+    <string name="not_chosen">Не выбрано</string>
+    <string name="invalid_video_html">К сожалению, на данный момент данный плеер недоступен.
+        Если вы хотите, чтобы его побыстрее починили, напишите об этом в поддержку, указав код ошибки и плеер.
+        Код ошибки: %s
+    </string>
+    <string name="media_unsupported">К сожалению, ваше устройство не поддерживает данный формат видео.</string>
+    <string name="no_internet">Проверьте соединение с интернетом</string>
+    <string name="pos_not_loaded">—:—</string>
+    <string name="cancel">Отмена</string>
+    <string name="data">Информация</string>
+    <string name="video">Видео</string>
+    <string name="auto_quality">Авто</string>
+    <string name="undefined_quality">Не определено</string>
+    <string name="enter_fullscreen">Для фиксации ориентации перейдите в полноэкранный режим</string>
+    <string name="viewing_order">Порядок просмотра</string>
+    <string name="query_hint">Поиск…</string>
+    <string name="playback_speed">Скорость воспроизведения</string>
+    <string name="not_found">Не найдено</string>
+    <string name="copy_error_code">Скопировать текст ошибки</string>
+    <string name="undefined">Не определено</string>
+    <string name="one_episode">Серия </string>
+    <string name="favorites_added">Аниме успешно добавленно в закладки</string>
+    <string name="favorites_deleted">Аниме убрано из закладок</string>
+    <string name="favorites_error_added">На данный момент невозможно добавить аниме в закладки.\nПожалуйста, попробуйте позже</string>
+    <string name="year">год</string>
+    <string name="year_1">Год: </string>
+    <!--region notifications-->
+    <string name="notification_title">Загрузка "<b>%s</b>" (<b>%d</b> из <b>%d</b>)</string>
+    <string name="notification_get_info">Сбор информации…</string>
+    <string name="pause">Пауза</string>
+    <string name="next">Пледующая</string>
+    <string name="notification_download_progress">%s из %s (%s/сек)</string>
+    <string name="resume">Продолжить</string>
+    <string name="success_download_title">Загрузка завершена</string>
+    <string name="success_download_content">Аниме %s загружено\n<b>%d</b> эп. из <b>%d</b></string>
+    <string name="invalid_download_title">Загрузка прервана</string>
+    <string name="invalid_download_content">В процессе загрузки произощли ошибки.</string>
+    <string name="shure_delete_anime">Удалить скачанные серии?</string>
+    <string name="shure_delete_anime_desc">Вы уверены, что хотите удалить аниме «‎<b>%s</b>» из загрузок?\nВсе серии будут удалены.\n<b>Обратите внимание:</b> отменить это действие будет невозможно!</string>
+    <string name="delete">Удалить</string>
+    <string name="wait_untill_anime_loaded">Пожалуйста, подождите, пока аниме не загрузится</string>
+    <string name="downloads_out_of">из</string>
+    <string name="downloaded">Скачано</string>
+    <string name="delete_video_dialog_title">Удаление серии из загрузок.</string>
+    <string name="delete_video_dialog_desc">Вы уверены, что хотите удалить эп. <b>%s</b> из загрузок?\nОтменить это действие будет невозможно!</string>
+    <string name="download_manager">Менеджер загрузок</string>
+    <string name="download_canceled_content">Загруза аниме была отменена</string>
+    <string name="dubbing_has_changed">У данной серии нет той озвучки, которую Вы раньше смотрели.</string>
+    <string name="change_dubbing">Поменять озвучку</string>
+    <string name="select_video_player">Выберите плеер</string>
+    <string name="no_videos_found">Видео не найдено. Скорее всего, эта серия еще не вышла.</string>
+    <string name="home">Главная</string>
+    <string name="downloads">Загрузки</string>
+    <string name="favorites">Закладки</string>
+    <string name="settings">Настройки</string>
+    <string name="history">История</string>
+    <string name="profile">Профиль</string>
+    <!--endregion-->
+    <!--region settings-->
+    <string name="player">Плеер</string>
+    <string name="home_label_page">Главная</string>
+    <!--endregion-->
+    <string-array name="not_defined">
+        <item>@string/undefined_quality</item>
+    </string-array>
+    <string name="favorites_item_fav">Избранное</string>
+    <string name="favorites_item_plan">Планы</string>
+    <string name="favorites_item_watch_now">Смотрю сейчас</string>
+    <string name="favorites_item_watched">Просмотрено</string>
+    <string name="favorites_item_stop_watching">Брошено</string>
+    <string name="search">Поиск</string>
+    <string name="site">Сайт</string>
+    <string name="search_find_result">Найдено <b>%d</b> аниме</string>
+    <string name="play_market_not_installed">Плей маркет не установлен. Не возможно открыть страницу загрузки</string>
+    <string name="fav_nothing_found_2">Добавьте аниме в закладки,\nи оно появится тут\n<b>ツ</b></string>
+    <string name="fav_nothing_found_1">Тут пока пусто<b>(</b></string>
+    <string name="down_nothing_found">Начните закачку,\nи аниме появится тут\n<b>ツ</b></string>
+    <string name="down_nothing_found_all">Скачайте аниме,\nи аниме появится тут\n<b>ツ</b></string>
+
+    <string name="search_nothind_found_1">Ани-тян ничего не нашла по Вашему запросу<b>(</b></string>
+    <string name="search_nothind_found_2">Попробуйте сменить сайт ( иконка сверху справа ), или поискать что-нибудь еще.\n<b>¯\\＿(ツ)＿/¯</b></string>
+    <string name="search_nothind_found_3">Попробуйте ввести другой поисковой запрос\n<b>¯\\＿(ツ)＿/¯</b></string>
+    <string name="cover">Обложка</string>
+    <string name="show_more">Показать еще…</string>
+    <string name="show_less">Свернуть</string>
+    <string name="copy_text">Скопировать</string>
+    <string name="genres">Жанры:</string>
+    <string name="issueDate">Дата выхода:</string>
+    <string name="synonyms">Аналогичные\nназвания:</string>
+    <string name="rating">Рейтинг</string>
+    <string name="studio">Студия:</string>
+    <string name="originalSource">Первоисточник:</string>
+    <string name="status">Статус:</string>
+    <string name="copy_link">Скопировать ссылку</string>
+    <string name="text_has_been_copied">Текст был скопирован</string>
+    <string name="back">Предыдущая</string>
+    <string name="open_anime">Открыть</string>
+    <string name="no_description">Нет описания</string>
+    <string name="no_page_found">Страница не найдена (</string>
+    <string name="pref_theme_key">theme</string>
+    <string name="pref_login_key">Login</string>
+    <string name="ok">OK</string>
+    <string name="navigation">Навигация</string>
+    <string name="interfaces">Интерфейс</string>
+    <string name="show_bottom_panel">Показывать нижнюю панель</string>
+    <string name="pref_bottom_panel_key">bottom_panel</string>
+    <string name="show_left_panel">Показывать боковое меню</string>
+    <string name="pref_left_menu_key">left_menu</string>
+    <string name="dark_theme">Тема</string>
+    <string name="anime_type">Тип:</string>
+    <string name="producer">Режиссер:</string>
+    <string name="cancelLoading">Приостановить воспроизведение</string>
+    <string name="more">Дополнительно</string>
+    <string name="pref_backup">backup</string>
+    <string name="backup">Бекап</string>
+    <string name="backup_sum">резервная копия</string>
+    <string name="create_backup">Создание бэкапа</string>
+    <string name="create">Создать</string>
+    <string name="need_permission">Для данного действия нужно предоставить соответствующее разрешение</string>
+    <string name="select_host">Выберите сайт</string>
+    <string name="clear_cache">Очистить кэш</string>
+    <string name="pref_clear_cache">clear_cache</string>
+    <string name="verify_delete">Подтвердить удаление</string>
+    <string name="delete_cache">Очистить кэш?\nБудет удалено <b>%s</b></string>
+    <string name="volume">Громкость</string>
+    <string name="download_anime_service">Аниме-загрузчик</string>
+    <string name="quality">Качество видео</string>
+    <string name="pref_quality">video_quality</string>
+    <string-array name="favorites_items">
+        <item>@string/favorites_item_fav</item>
+        <item>@string/favorites_item_plan</item>
+        <item>@string/favorites_item_watch_now</item>
+        <item>@string/favorites_item_watched</item>
+        <item>@string/favorites_item_stop_watching</item>
+    </string-array>
+    <string name="p240">240p</string>
+    <string name="p360">360p</string>
+    <string name="p480">480p</string>
+    <string name="p720">720p</string>
+    <string name="p1080">1080p</string>
+    <string name="pref_quality_sum">Качество загружаемого видео по умолчанию</string>
+    <string name="choice_host">Выбор сайта</string>
+    <string name="choice_host_search">Выбор сайта для поиска</string>
+    <string name="choice_host_description">Ресурс, с которого берутся все данные.\nУ разных сайтов списки аниме могут различаться (названия тоже не всегда одинаковые), так что если не можете найти аниме на одном сайте - попробуйте на другом.</string>
+    <string name="enter">Перейти</string>
+    <string name="portrait">Портрет</string>
+    <string name="landscape">Альбом</string>
+    <string name="landscape_rotated">Альбом наоборот</string>
+    <string name="auto_orient">Авто</string>
+    <string name="video_player_notif">Video player notification</string>
+    <string name="video_player_notif_desc">Notification to control video player</string>
+    <string name="remove_all_items">Очистить историю</string>
+    <string name="history_deleted">История очищена</string>
+    <string name="cache_description">Сохраненные обложки ( картинки )</string>
+    <string name="history_nothing_found">Откройте несколько аниме,\n и они появятся тут\n<b>ツ</b></string>
+    <string name="delete_history">Очистить историю</string>
+    <string name="download_completed">Завершенные загрузки</string>
+    <string name="download_in_progress">В процессе</string>
+    <string name="from">Из</string>
+    <string name="ready">Вышел</string>
+    <string name="ongoing">Онгоинг</string>
+    <string name="subtitle">Субтитры</string>
+    <string name="show_video_video_view">открыть веб версию</string>
+    <string-array name="array_quality">
+        <item>@string/p240</item>
+        <item>@string/p360</item>
+        <item>@string/p480</item>
+        <item>@string/p720</item>
+        <item>@string/p1080</item>
+    </string-array>
+    <string name="theme_0">Светлая</string>
+    <string name="theme_1">Темная</string>
+    <string name="theme_auto">Системная</string>
+    <string name="logs">Статистика</string>
+    <string name="enable_logs">Разрешить cбор статистики</string>
+    <string name="enable_logs_summary">Отсылаются ТОЛЬКО логи, Ваши персональные данные некоим образом не задействуются</string>
+    <string name="pref_enable_log">logs</string>
+    <string name="pref_enable_bugs">bugs</string>
+    <string name="enable_bugs_log">Отсылать отчеты об ошибках</string>
+    <string name="enable_bugs_summary">Уведомлять разработчиков об ошибках</string>
+    <string name="dark_theme_sum">Цветовая гамма интерфейса</string>
+    <string name="policy_title">Пользовательское соглашение</string>
+    <string name="verify_policy">Принимаю условия</string>
+    <string name="policy_description">Пользуясь данным приложением, Вы принимаете <a href="https://anime-prog.github.io/policy/sogl.html">Пользовательское соглашение</a> и <a href="https://anime-prog.github.io/policy/conf.html">Политику конфиденциальности</a>.\nРазработчики данного приложения имеют право менять этот документ в любое время, не уведомляя Вас об этом.\nЕсли Вы не согласны с каким-либо документом, то покиньте приложение.\n<a href="https://anime-prog.github.io/policy/pravo.html">Правообладателям</a></string>
+    <string name="memory">Память</string>
+    <string name="images_cache">Кэш обложек</string>
+    <string name="max_cache_files_count">Кэш обложек</string>
+    <string name="max_cache_files_count_desc">Максимальное количество сохряняемых в кэш обложек</string>
+    <string name="no_subtitle">Отключины</string>
+    <string name="comments">Комментирии</string>
+    <string name="avatar">avatar</string>
+    <string name="season_1">Зима</string>
+    <string name="season_2">Весна</string>
+    <string name="season_3">Лето</string>
+    <string name="season_4">Осень</string>
+    <string name="status_0">вышел</string>
+    <string name="status_1">онгоинг</string>
+    <string name="status_2">анонс</string>
+
+    <string name="season_1_f">зимнего</string>
+    <string name="season_2_f">весеннего</string>
+    <string name="season_3_f">летнего</string>
+    <string name="season_4_f">осеннего</string>
+
+    <string name="main_page_title">Аниме %s сезона</string>
+    <string name="anime_updates">Обновления аниме</string>
+    <string name="announcement">Анонсы</string>
+    <string name="recommends">Рекомендации</string>
+    <string name="site_news">Новые тайтлы</string>
+    <string name="TV">ТВ</string>
+    <string name="PF">п/ф</string>
+    <string name="KF">к/ф</string>
+    <string name="OVA">OVA</string>
+    <string name="SPECIAL">спэшл</string>
+    <string name="MC">м/с</string>
+    <string name="ONA">ONA</string>
+    <string name="auth">Авторизоваться</string>
+    <string name="auth_to_account">Авторизация в аккаунт</string>
+    <string name="login_email">Логин/email</string>
+    <string name="password">Пароль</string>
+    <string name="register_text"><a href="https://yummyani.me/register">Зарегистрироваться</a></string>
+    <string name="authFragment">Авторизация</string>
+    <string name="profile_not_implemented">Данный ресурс пока не поддерживается</string>
+    <string name="captcha_needed">Flood control: нужно решить капчу</string>
+</resources>

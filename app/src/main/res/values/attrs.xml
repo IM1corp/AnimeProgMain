@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorContainerElement" format="color"/>
+    <attr name="bottomMenuColor" format="color"/>
+    <attr name="iconTintColor" format="color"/>
+    <attr name="titleTextColor" format="color"/>
+    <attr name="colorBackground" format="color"/>
+    <attr name="alertDialogTextColor" format="color"/>
+    <attr name="dragElementColor" format="color"/>
+    <attr name="colorOnBlur" format="color"/>
+    <attr name="navigationColor" format="color"/>
+</resources>

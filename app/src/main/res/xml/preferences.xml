@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/downloads">
+        <Preference
+            android:icon="@drawable/ic_high_quality"
+            android:entries="@array/array_quality"
+            android:key="@string/pref_quality"
+            android:summary="@string/pref_quality_sum"
+            android:title="@string/quality" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/interfaces">
+        <Preference
+            android:key="@string/pref_theme_key"
+            android:title="@string/dark_theme"
+            android:summary="@string/dark_theme_sum"
+            app:icon="@drawable/ic_tv" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/navigation">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_bottom_panel_key"
+            android:title="@string/show_bottom_panel"
+            app:icon="@drawable/ic_bottom_panel" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_left_menu_key"
+            android:title="@string/show_left_panel"
+            app:icon="@drawable/ic_left_panel" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/logs">
+        <CheckBoxPreference
+            android:icon="@drawable/ic_log"
+            android:defaultValue="true"
+            android:title="@string/enable_logs"
+            android:summary="@string/enable_logs_summary"
+            android:key="@string/pref_enable_log"/>
+        <CheckBoxPreference
+            android:icon="@drawable/ic_bug"
+            android:defaultValue="true"
+            android:title="@string/enable_bugs_log"
+            android:summary="@string/enable_bugs_summary"
+            android:key="@string/pref_enable_bugs"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/memory">
+        <com.imcorp.animeprog.Default.PreferenceProgress
+            android:title="@string/images_cache"
+            android:key="@string/pref_clear_cache"
+            android:summary="@string/cache_description"
+            android:icon="@drawable/ic_photo"
+            />
+
+    </PreferenceCategory>
+    <!--<PreferenceCategory android:title="@string/more">
+        <!- -<Preference
+            android:key="@string/pref_backup"
+            android:title="@string/backup"
+            android:summary="@string/backup_sum"
+            app:icon="@drawable/ic_download" />- ->
+        <Preference android:title="@string/clear_cache"
+            android:key="@string/pref_clear_cache"
+            android:summary="@string/clear_cache_description"
+            android:icon="@drawable/ic_trash" />
+    </PreferenceCategory>-->
+</PreferenceScreen>

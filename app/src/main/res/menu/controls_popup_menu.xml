@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.PatientSelectionActivity">
+
+    <item
+        android:id="@+id/menuSpeed"
+        android:icon="@drawable/ic_speed"
+        android:title="@string/playback_speed" />
+    <item
+        android:id="@+id/menuDelete"
+        android:title="@string/delete"
+        android:icon="@drawable/ic_delete" />
+    <item android:id="@+id/menuVolume"
+        android:title="@string/volume"
+        android:icon="@drawable/ic_volume"/>
+    <item android:id="@+id/menuSubtitle"
+        android:title="@string/subtitle"
+        android:icon="@drawable/ic_subtitles"/>
+    <item android:id="@+id/menuShowWebView"
+        android:title="@string/show_video_video_view"
+        android:icon="@drawable/ic_browser"/>
+    <!--<item
+        android:id="@+id/menuFrench"
+        android:icon="@drawable/language_french"
+        android:title="@string/french" />-->
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+    <item android:id="@+id/select_host"
+        android:enabled="true"
+        android:visible="false"
+        android:title="@string/site"
+        android:icon="@mipmap/animego_icon"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+</menu>

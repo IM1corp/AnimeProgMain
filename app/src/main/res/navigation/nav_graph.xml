@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.imcorp.animeprog.MainActivity.fragments.home.HomeFragment"
+        android:label="@string/home_label_page"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="refresh"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:destination="@id/searchFragment" />
+        <argument
+            android:name="urlYummyAnime"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="urlAnimeGo"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="yummy-anime.ru/catalog/item/{urlYummyAnime}" />
+        <deepLink
+            android:id="@+id/deepLink4"
+            app:uri="yummyani.me/catalog/item/{urlYummyAnime}" />
+
+        <deepLink
+            android:id="@+id/deepLink3"
+            app:uri="animego.org/anime/{urlAnimeGo}" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.imcorp.animeprog.MainActivity.fragments.favorites.FavoritesFragment"
+        android:label="@string/favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_searchFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/downloadsFragment"
+        android:name="com.imcorp.animeprog.MainActivity.fragments.downloads.DownloadsFragment"
+        android:label="@string/downloads" >
+        <action
+            android:id="@+id/action_downloadsFragment_to_searchFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.imcorp.animeprog.MainActivity.fragments.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit" />
+        <action
+            android:id="@+id/action_profileFragment_to_pageHistoryFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:destination="@id/pageHistoryFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_searchFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:destination="@id/searchFragment" >
+        </action>
+        <action
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popExitAnim="@animator/fragment_open_exit"
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.imcorp.animeprog.Settings.SettingsFragment"
+        android:label="@string/settings" />
+    <fragment
+        android:id="@+id/pageHistoryFragment"
+        android:name="com.imcorp.animeprog.MainActivity.fragments.history.PageHistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.imcorp.animeprog.MainActivity.fragments.profile.LoginFragment"
+        android:label="@string/authFragment"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.imcorp.animeprog.MainActivity.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search">
+        <argument
+            android:name="cameFrom"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_downloadsFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:popUpTo="@id/downloadsFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_favoritesFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:popUpTo="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_profileFragment"
+            app:enterAnim="@animator/fragment_open_enter"
+            app:exitAnim="@animator/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/fragment_open_exit"
+            app:popUpTo="@id/profileFragment" />
+    </fragment>
+</navigation>

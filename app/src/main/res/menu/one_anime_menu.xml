@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/actionDownloads"
+        android:enabled="true"
+        android:icon="@drawable/ic_download"
+        android:title="@string/downloads"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionFavorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_start_not_selected"
+        android:title="@string/favorites"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/actionCopyLink"
+        android:enabled="true"
+        android:title="@string/copy_link"
+        app:showAsAction="withText"
+        />
+</menu>

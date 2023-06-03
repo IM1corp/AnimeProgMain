@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maxLines">10</integer>
+    <integer name="maxLinesAnimation">200</integer>
+    <integer name="showContainerItemAnimation">400</integer>
+    <integer name="hostChoiceWaitTime">400</integer>
+</resources>

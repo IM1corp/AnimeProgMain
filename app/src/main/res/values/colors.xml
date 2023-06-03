@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--region dark theme -->
+    <!--<color name="tintColor">#A1A1A1</color>-->
+    <color name="iconColor">#000</color>
+    <color name="colorPrimary">#8B4FFF</color>
+    <color name="colorAccent">#FFA5A5</color>
+    <color name="color_search_list_view">#1B0707</color>
+    <color name="background_viewing_order">#BEC9F8</color>
+    <color name="link_color">#3D53DB</color>
+    <color name="controls_bg">#881D2224</color>
+    <color name="iconTintColor">#545454</color>
+    <color name="onDragColor">#fdffc9</color>
+    <color name="text_download_color">#42434B</color>
+    <color name="colorDevider">@android:color/darker_gray</color>
+    <color name="progressBackground">#6BB5FF9C</color>
+    <color name="textColor">#808080</color>
+    <color name="downloaded_item_color">#8CFF83</color>
+    <color name="colorContainerElement">#d9d9d9</color>
+    <color name="noImageColor">#636363</color>
+    <!--endregion-->
+
+    <color name="colorAccentDark">#915E5E</color>
+    <color name="colorPrimaryDark">#6239B3</color>
+    <color name="colorBgDark">#434343</color>
+
+    <color name="colorOnBlur">#858585</color>
+
+    <color name="colorContainerElementDark">#787878</color>
+    <color name="colorBottomMenuBgDark">#2A2A2E</color>
+    <color name="colorSecondaryTextDark">#878787</color>
+    <color name="onDragColorDark">#383838</color>
+    <color name="textGrey">#B1B1B1</color>
+
+    <color name="snackBarBgDark">#2C2B2B</color>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:checkableBehavior="single"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"
+            android:checked="true"
+            android:checkable="true"
+            app:showAsAction="ifRoom" />
+    </group>
+    <item android:title="@string/downloads">
+        <menu
+            android:checkableBehavior="single"
+            android:id="@+id/downloadsGroup">
+        <item android:id="@+id/downloadsFragment"
+            android:enabled="true"
+            android:icon="@drawable/ic_download"
+            android:checkable="true"
+            android:title="@string/downloaded"
+            app:showAsAction="ifRoom" />
+        <item android:id="@+id/downloadsFragmentNow"
+            android:enabled="true"
+            android:icon="@drawable/ic_progress"
+            android:checkable="true"
+            android:title="@string/download_in_progress"
+            app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+    <item android:title="@string/favorites" >
+        <menu
+            android:checkableBehavior="single"
+            android:id="@+id/favGroup">
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/favoritesFavItem"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_bookmark"
+                    android:checkable="true"
+                    android:title="@string/favorites_item_fav"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/favoritesWatchLaterItem"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_finished"
+                    android:checkable="true"
+                    android:title="@string/favorites_item_plan"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/favoritesWatchNowItem"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_watch_now"
+                    android:checkable="true"
+                    android:title="@string/favorites_item_watch_now"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/favoritesWatchedItem"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_watched"
+                    android:checkable="true"
+                    android:title="@string/favorites_item_watched"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/favoritesStopWatchedItem"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_trash"
+                    android:checkable="true"
+                    android:title="@string/favorites_item_stop_watching"
+                    app:showAsAction="ifRoom" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/profile">
+        <menu android:menuCategory="container"
+            android:checkableBehavior="single">
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/profileFragment"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_profile"
+                    android:checkable="true"
+                    android:title="@string/profile"
+                    app:showAsAction="ifRoom" />
+                <item android:id="@+id/settingsFragment"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_settings"
+                    android:checkable="true"
+                    android:title="@string/settings" />
+                <item android:id="@+id/pageHistoryFragment"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_history"
+                    android:checkable="true"
+                    android:title="@string/history" />
+            </group>
+        </menu>
+    </item>
+</menu>

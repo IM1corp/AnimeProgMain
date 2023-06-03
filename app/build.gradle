@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: "androidx.navigation.safeargs"
+
+android {
+    buildFeatures {
+        viewBinding true
+    }
+
+    signingConfigs {
+        def password = ""
+        file(project.projectDir.parent.toString() + '\\cert\\password.TXT').withInputStream {
+            password=it.readLines()[0]
+        }
+        Test {
+            storeFile file(project.projectDir.parent.toString() + '\\cert\\main.jks')
+            keyPassword password
+            storePassword password
+            keyAlias 'key0'
+        }
+    }
+    compileSdkVersion 33
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 8
+        versionName "1.0.8"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary true
+        signingConfig signingConfigs.Test
+        applicationId "com.imcorp.animeprog"
+
+        //multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles 'proguard-rules.pro', getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+        debug {
+            minifyEnabled false
+            applicationIdSuffix = ".debug"
+            debuggable true
+            shrinkResources false
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/LICENSE.md']
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+
+    /*sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/main_activity',
+                            'src/main/res/layout',
+                            'src/main/res'
+                    ]
+        }
+    }*/
+    testOptions{
+        unitTests.returnDefaultValues = true
+    }
+    namespace 'com.imcorp.animeprog'
+}
+//apply plugin: 'com.android.application'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'org.jsoup:jsoup:1.11.1'
+    implementation "androidx.core:core-ktx:1.10.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+    //implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    testImplementation 'org.json:json:20180813'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.6'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.18.6'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.18.6'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.18.6'
+    implementation 'com.eclipsesource.j2v8:j2v8_android:3.0.5@aar'
+
+
+    implementation "com.android.support:multidex:1.0.3"
+    // AppMetrica SDK.
+    implementation 'com.yandex.android:mobmetricalib:3.21.0'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'com.github.hcaptcha:hcaptcha-android-sdk:3.8.0'
+}
+repositories {
+    maven { url 'https://jitpack.io' }
+    mavenCentral()
+}

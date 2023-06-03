@@ -1,0 +1,172 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AppCompat.DayNight" parent="Theme.MaterialComponents.Light" />
+    <style name="SystemStylesAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="actionBarSize">40dp</item>
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarTheme</item>
+        <item name="preferenceTheme">@style/PreferenceStyle</item>
+        <item name="actionBarPopupTheme">@style/popupTheme</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
+
+    </style>
+    <style name="AppTheme" parent="@style/SystemStylesAppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:actionBarSize">75dp</item>-->
+        <item name="colorContainerElement">@color/colorContainerElement</item>
+        <item name="android:textColorSecondary">?android:attr/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="alertDialogTextColor">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="colorBackground">@android:color/white</item>
+        <item name="titleTextColor">@color/color_search_list_view</item>
+
+        <item name="dragElementColor">@color/onDragColor</item>
+
+        <item name="bottomMenuColor">@android:color/white</item>
+        <item name="navigationColor">@android:color/white</item>
+        <item name="android:navigationBarDividerColor" tools:targetApi="o_mr1">?attr/iconTintColor</item>
+        <item name="iconTintColor">@color/iconTintColor</item>
+        <!--<item name="colorOnSurface">?android:attr/textColor</item>-->
+        <item name="colorOnBlur">?android:attr/textColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+    <style name="AppDarkTheme" parent="@style/SystemStylesAppTheme">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorAccentDark</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+
+        <item name="android:windowBackground">@color/colorBgDark</item>
+        <item name="android:colorBackground">@color/colorBgDark</item>
+        <item name="colorBackground">@color/colorBgDark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="alertDialogTextColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@color/textGrey</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="colorContainerElement">@color/colorContainerElementDark</item>
+        <item name="bottomMenuColor">@color/colorBottomMenuBgDark</item>
+        <item name="navigationColor">@color/colorBottomMenuBgDark</item>
+
+        <item name="iconTintColor">@android:color/white</item>
+        <item name="dragElementColor">@color/onDragColorDark</item>
+
+        <item name="colorSurface">@color/colorBgDark</item>
+        <item name="colorOnSurface">@android:color/white</item>
+
+        <item name="snackbarStyle">@style/snackbarStyle</item>
+        <item name="snackbarTextViewStyle">@style/snackbarTextStyle</item>
+        <item name="colorOnBlur">@color/colorOnBlur</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <!--<item name="selectableItemBackground">@style/SelectableItemBackground</item>-->
+    </style>
+    <style name="CheckStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">?attr/colorAccent</item>
+    </style>
+    <style name="PreferenceStyle" parent="@style/PreferenceThemeOverlay.v14.Material">
+       <!-- <item name="android:tint">?attr/iconTintColor</item>-->
+    </style>
+    <!--region system-->
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">?attr/colorOnBlur</item>
+    </style>
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="MyTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="MyActionBarTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+    </style>
+    <style name="AppTheme.ActionBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+    </style>
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="popupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <!--endregion-->
+
+    <style name="snackbarTextStyle" parent="@style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">?android:attr/textColor</item>
+    </style>
+    <style name="snackbarStyle" parent="@style/Widget.MaterialComponents.Snackbar">
+        <item name="backgroundTint">@color/snackBarBgDark</item>
+    </style>
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/TitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/DescMaterialStyle</item>
+    </style>
+    <style name="TitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">?attr/alertDialogTextColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="DescMaterialStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">?attr/alertDialogTextColor</item>
+    </style>
+
+    <style name="BottomSheetMenu" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorAccentDark</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="popupMenuStyle" parent="Widget.AppCompat.Light.PopupMenu">
+        <item name="android:textColor">?android:attr/textColor</item>
+        <item name="android:popupBackground">@drawable/popup_background</item>
+        <item name="iconTint">?attr/iconTintColor</item>
+
+    </style>
+    <style name="DarkPopupMenuStyle" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:popupMenuStyle">@style/popupMenuStyleDark</item>
+        <item name="popupMenuStyle">@style/popupMenuStyleDark</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="popupMenuStyleDark" parent="popupMenuStyle">
+        <item name="android:popupBackground">@drawable/popup_background_dark</item>
+    </style>
+    <style name="selectHostPopupMenuStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:itemBackground">#B3BABABA</item>
+    </style>
+    <style name="CustomAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:background">?attr/colorBackground</item>
+        <item name="android:windowBackground">@drawable/popup_background</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/DialogTextStyle</item>
+        <item name="windowMinWidthMajor">90%</item>
+        <item name="windowMinWidthMinor">90%</item>
+        <item name="windowFixedHeightMinor">140%</item>
+        <item name="windowFixedHeightMajor">80%</item>
+        <!--<item name="windowFixedHeightMinor">80%</item>-->
+    </style>
+    <style name="RedButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="BottomNavView" parent="AppTheme">
+        <item name="colorOnSurface">@color/colorAccent</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="DialogTextStyle" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">?android:attr/textColor</item>
+    </style>
+    <style name="myCheckedTextView" parent="@style/Widget.MaterialComponents.CheckedTextView">
+        <item name="android:textColor">?android:attr/textColor</item>
+    </style>
+
+</resources>
